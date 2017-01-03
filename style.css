@@ -1,0 +1,43 @@
+.header {
+  padding-left: 1%;
+}
+.logo{
+  float: left;
+  padding: 1 1 .3em 2em;
+}
+.hamburger-menu{
+  text-align:right;
+  font-size: 20px;
+}
+.navbar{
+  padding: 0.1em;
+}
+.navbar:hover ul{
+  display: block;
+}
+.navbar ul{
+  display:none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+.navbar li{
+  margin-right: .5em;
+  font-size: 1em;
+  padding: .1em .2em;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width:760px){
+  .hamburger-menu{
+    display:none;
+  }
+  .navbar ul{
+    display: block;
+  }
+  .navbar li{
+    display: inline-block;
+    float: right;
+  }
+}
