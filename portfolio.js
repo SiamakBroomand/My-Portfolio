@@ -5,7 +5,7 @@ var sourceData = [
     author:      'Siamak Broomand',
     authorUrl:   '',
     publishedOn: '2015-11-05',
-    body:        '<p>asldnaslnlad</p>'
+    body:        '<p></p>'
   },
   {
     title:       'Baseball Ipsum',
