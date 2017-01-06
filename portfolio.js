@@ -1,34 +1,43 @@
+'use strict';
 var sourceData = [
   {
-    title:       'Bus Mall',
-    category:    'food',
+    title:       'Story Book',
+    category:   'web',
+    imgsrc:      '',
+    author:    'Siamak Broomand',
+    publishedOn: '',
+    mission:        '<p>Mission: <br>To make a website in which <strong> kids </strong> can either type or ask their parents to type the story they tell based on the photo shown.  This website is basically designed to <em> avoid repetition </em> of bedtime stories and most important of all to make kids <strong> creative </strong>.  </p>',
+    methodsUsed: '<p>used methods</p>',
+    githubUrl:   'https://amphib24.github.io/storybook-project/story.html',
+  },
+  {
+    title:       'Salmon cookies',
+    category:   'wowwww',
+    imgsrc:      '',
     author:      'Siamak Broomand',
-    authorUrl:   '',
-    publishedOn: '2015-11-05',
-    body:        '<p></p>'
+    publishedOn: '',
+    mission:        '<p></p>',
+    methodsUsed: '<p></p>',
+    githubUrl:   '',
   },
   {
-    title:       'Baseball Ipsum',
-    category:    'sports',
-    author:      'Felix Hernandez',
-    authorUrl:   'http://www.baseball-reference.com/players/h/hernafe02.shtml',
-    publishedOn: '2015-11-04',
-    body:        '<p></p>'
+    title:       'My Portfolio',
+    category:   'web',
+    imgsrc:      '',
+    author:      'Siamak Broomand',
+    publishedOn: '',
+    mission:        '<p></p>',
+    methodsUsed: '<p></p>',
+    githubUrl:   '',
   },
   {
-    title:       'Cat Ipsum',
-    category:    'pets',
-    author:      'Meow Meow',
-    authorUrl:   'https://http.cat/',
-    publishedOn: '2015-11-03',
-    body:        '<p></p>'
-  },
-  {
-    title:       'Cheese Ipsum',
-    category:    'food',
-    author:      'El Rey de Queso',
-    authorUrl:   'https://www.youtube.com/watch?v=oHg5SJYRHA0',
-    publishedOn: '2015-11-02',
-    body:        '<p></p>'
+    title:       'Bus Mall',
+    category:   'whaaaat',
+    imgsrc:      '',
+    author:      '',
+    publishedOn: '',
+    mission:        '<p></p>',
+    methodsUsed: '<p></p>',
+    githubUrl:   '',
   },
 ];
