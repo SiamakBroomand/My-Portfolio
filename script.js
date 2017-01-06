@@ -7,7 +7,7 @@ function Article (info) {
   this.author = info.author;
   this.githubUrl = info.authorUrl;
   this.imgsrc = info.imgsrc;
-  this.problem = info.problem;
+  this.mission = info.mission;
   this.methodsUsed = info.methodsUsed;
   this.publishedOn = info.publishedOn;
 }
