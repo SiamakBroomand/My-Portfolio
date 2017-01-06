@@ -4,12 +4,25 @@
     <meta charset="utf-8">
 
     <title></title>
-    <mata name  “viewport”, content=“width=device-width, initial-scale=1”>
+    <mata name=“viewport”, content=“width=device-width, initial-scale=1”>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="jquery-3.1.1.js"></script>
+    <script id="portfolio-template" type="text/x-handlebars-template">
+        <article data-author="{{author}}" data-category="{{category}}">
+           <header>
+             <h1>{{title}}</h1>
+             <div class="byline">
+               By <address><a href="{{githubUrl}}">{{author}}</a></address>
+               published <time pubdate datetime="{{publishedOn}}">{{publishedOn}}</time>
+             </div>
+           </header>
+           <section class="article-problem">{{{problem}}}</section>
+           <section class="article-methodsUsed">{{{methodsUsed}}}</section>
+           <a href="#" class="read-on">Read on &rarr;</a>
+         </article>
+      </script>
   </head>
+
   <body>
     <header class="header">
       <section class="logo">
@@ -27,7 +40,40 @@
         </ul>
         </nav>
     </header>
+
     <main>
+        <section id="articles" class="tab-content">
+          <div>
+            <ul id="filters">
+              <li>
+                <select id="author-filter">
+                  <option value="">-- Filter by Authors --</option>
+                </select>
+              </li>
+              <li>
+                <select id="category-filter">
+                  <option value="">-- Filter by Categories --</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="about" class="tab-content">
+          <header>
+            Welcome to my Blog
+          </header>
+          <section>
+            <h1>Some of my interests:</h1>
+            <ul>
+              <li>Coding</li>
+              <li>Sharing what I've learned</li>
+              <li>Hanging with my family</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+
+    <!-- <main>
         <section id="articles">
           <article class="template" data-category="me">
             <header>
@@ -40,8 +86,11 @@
           <section class="article-body"></section>
         </article>
       </section>
-    </main>
+    </main> -->
   </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script src="portfolio.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="articleview.js"></script>
 </html>
